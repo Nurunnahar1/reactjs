@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.team-area .team-header h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 80px;
+}
+.team-area .team-header p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+}
+.team-area{
+    .team-body {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px;
+        .team-item {
+            text-align: center;
+            width: 32%;
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-weight: 300;
+            }
+        }
+    }
+}
