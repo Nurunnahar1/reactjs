@@ -1,11 +1,11 @@
-import "./App.css"; 
-import  Food  from "./components/Food/Food";
+import "./App.css";  
+import Team from "./components/Team/Team";
 
 function App() { 
 
   return (
     <>
-     <Food/>
+     <Team/>
     </>
   );
 }

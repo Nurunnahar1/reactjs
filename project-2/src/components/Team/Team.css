@@ -1,0 +1,25 @@
+.team {
+    text-align: center;
+    padding: 50px;
+    width: 1000px;
+    margin: 0px auto;
+    background-color: antiquewhite;
+}
+
+.team-box {
+
+    display: flex;
+
+}
+
+.team-box .team-item {
+    box-shadow: 3px 3px 3px 5px rgba(25, 100, 150, 0.2);
+    padding: 10px;
+    margin: auto 20px;
+
+}
+
+.team-item img {
+    width:  100%;
+    border-radius: 50%;
+}
