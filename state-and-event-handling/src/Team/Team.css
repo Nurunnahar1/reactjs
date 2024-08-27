@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.team{
+    width: 100%; 
+    height: 756px;
+}
+ 
+.single-item {
+    width: 31%;
+    float: left;
+    margin: 1%;
+    border: 1px solid #777777;
+    background-color: #e9e4e4;
+}
+.single-item img{
+    width: 100%;
+}
+h1{
+    font-size: 14px;
+}
+p{
+       font-size: 16px;
+       text-align: justify;
+       padding: 0px 11px;
+       margin: 20px 0px;
+}
+.red{
+    background-color: red;
+    margin: 5px;
+}
+.yellow {
+    background-color: yellow;
+     margin: 5px;
+}
+.blue {
+    background-color: blue;
+     margin: 5px;
+}
+.skyblue {
+    background-color: skyblue;
+     margin: 5px;
+}
+.pink {
+    background-color: pink;
+     margin: 5px;
+}
+.white {
+    background-color: white;
+     margin: 5px;
+}
