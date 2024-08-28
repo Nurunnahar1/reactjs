@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+
+.todo {
+    margin: 50px;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+
+}
+
+.add {
+    padding: 13px 20px; 
+}
+
+ul li {
+    list-style: none;
+    padding: 8px 11px;
+    background-color: #ded8d8;
+    width: 400px;
+    margin: 3px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.delete{
+    padding: 5px 10px;
+    text-align: center;
+    background-color: red;
+    border: 1px solid orangered;
+    color: #ffff;
+}
+
+ 
