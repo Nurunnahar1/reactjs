@@ -1,14 +1,12 @@
- 
-import './App.css'
-import Team from './components/Team'
+import "./App.css";
+import Blog from "./components/Blog";
 
-function App() { 
-
+function App() {
   return (
     <>
-   <Team/>
+      <Blog />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

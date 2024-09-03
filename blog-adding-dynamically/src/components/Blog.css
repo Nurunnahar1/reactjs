@@ -44,3 +44,7 @@ input, button{
 button{
     background-color: cadetblue;
 }
+h1 {
+    margin: 10px;
+    text-align: center;
+}
