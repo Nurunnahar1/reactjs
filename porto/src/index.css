@@ -61,17 +61,140 @@
  }
 
  .icon:hover {
-     background-color: #4F6BA5;
-     color: #343232; 
+     background-color: #1A81BA;
+     color: #fff;
  }
 
- .set-icon { 
-     margin-right: 10px; 
-  
+ .set-icon {
+     margin-right: 10px;
+
  }
 
  .set-icon a {
      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
      border-radius: 50%;
-  
+
+ }
+
+
+ /* ===================footer section start====================*/
+ .footer {
+     background-color: #212529;
+     padding: 54px;
+     height: 306px;
+ }
+
+ .footer-area {}
+
+ .content {
+
+     margin: auto 0px;
+ }
+
+
+ .col-one,
+ .col-two,
+ .col-three {
+     width: 238px;
+     float: left;
+ }
+
+ .col-four {
+     width: 122px;
+     float: left;
+ }
+
+ .col-two {
+
+     margin-left: 95px;
+ }
+
+ .col-one {
+     margin-left: 0;
+ }
+
+ .col-three {
+     margin-left: 67px;
+ }
+
+
+
+ .footer .col-one h2,
+ .col-two h2,
+ .col-three h2,
+ .col-four h2 {
+     margin: 10px 0px 25px 0px;
+     color: #fff;
+     font-size: 12.6px;
+     font-weight: 600;
+ }
+
+ .footer .col-one p,
+ .col-two a,
+ .col-three a,
+ .col-four p {
+     color: #777777;
+     font-size: 10px;
+ }
+
+ .col-two a,
+ .col-three a {
+     text-decoration: none;
+
+
+ } 
+ 
+ .col-two a:hover,
+ .col-three a:hover {
+     color: #fff;
+     transition-delay: .1s
+ }
+
+ .col-two ul li,
+ .col-three ul li {
+     margin-top: -5px;
+     list-style: none;
+     padding: 0px 0px 5px 0px;
+
+ }
+
+ .col-four {
+     margin-right: 0px;
+ }
+
+ .btn {}
+
+ .footer .col-one input {
+     margin-top: 15px;
+     border: none;
+     padding: 10px 44px 10px 10px;
+     border-radius: 25px 0px 0px 25px;
+     font-size: 10px;
+     color: #878888;
+     background: #DEDFDF;
+     float: left;
+     display: inline;
+ }
+
+ .footer .col-one button {
+     border: none;
+     padding: 11px 13px 9px 10px;
+     border-radius: 0px 25px 25px 0px;
+     font-size: 10px;
+     color: #303131;
+     margin-top: 15px;
+     background-color: #DEDFDF;
+ }
+
+ .footer .col-one button:hover {
+
+     background-color: #D3D4D4;
+ }
+
+ .fa-solid.fa-circle-dot,
+ .fa-brands.fa-whatsapp,
+ .fa-solid.fa-envelope {
+     margin-right: 7px;
+     padding: 4px;
+     color: #0088CC;
  }
