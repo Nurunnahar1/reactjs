@@ -4,6 +4,7 @@
 .feature-header {
     display: flex;
     justify-content: space-between;
+    margin: 30px 0px;
 }
 .our-feature {
     font-size: 28px;
@@ -14,8 +15,8 @@ h1 {
     font-size: 20px;
 }
 .feature-one {
-  
-    width: 32%; 
+  float: left;
+  width: 300px;
 }
 .cus-heading {
     display: flex;
@@ -27,6 +28,9 @@ h1 {
     color: #08C;
     font-size: 23px;
 }
+.customer-support {
+    margin-bottom: 30px;
+}
 .customer-support h2 {
     font-size: 16.8px;
     font-weight: 700;
@@ -36,4 +40,9 @@ h1 {
     width: 100%;
     display: block;
     font-size: 14px;
+}
+.feature-two {
+    float: left;
+    width: 300px;
+    margin: 0px 31px;
 }
