@@ -1,0 +1,17 @@
+.technology {
+    height: 150px;
+    background-color: #0088CC;
+}
+
+.tecno-left {
+    float: left;
+    width: 80%;
+
+}
+
+.tecno-left h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+}
