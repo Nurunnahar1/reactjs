@@ -83,9 +83,10 @@
      background-color: #212529;
      padding: 54px;
      height: 306px;
+     overflow: hidden;
  }
 
- .footer-area {}
+ 
 
  .content {
 
@@ -163,7 +164,7 @@
      margin-right: 0px;
  }
 
- .btn {}
+ 
 
  .footer .col-one input {
      margin-top: 15px;

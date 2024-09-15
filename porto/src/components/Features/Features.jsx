@@ -1,3 +1,4 @@
+ 
 import "./Features.css";
 
 const Features = () => {
@@ -94,8 +95,7 @@ const Features = () => {
           </div>
         </div>
         <div className="feature-three">
-          <h2>slider</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis reprehenderit non iusto nulla inventore! Atque consectetur perferendis nihil sed.</p>
+       
         </div>
       </div>
     </>
