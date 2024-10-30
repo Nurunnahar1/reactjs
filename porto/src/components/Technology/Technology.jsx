@@ -3,18 +3,18 @@ import "./Technology.css";
 const Technology = () => {
   return (
     <>
-      <div className="technology">
-        <div className="container">
-          <div className="tecno-left">
+      <div className="tech-area">
+        <div className="technology">
+          <div className="left-side">
             <h2>
-              The fastest way to grow your business with the leader in
-              <span>Technology</span>
+              The fastest way to grow your business with the leader in Technology
             </h2>
             <p>Check out our options and features included.</p>
           </div>
-          <div className="tecno-right">
-            <button>Get Started Now</button> <span>or</span>
-            <a href="learn more."></a>
+          <div className="right-side">
+            <button>Get Started Now</button>
+            <span>or</span>
+            <p>learn more</p>
           </div>
         </div>
       </div>

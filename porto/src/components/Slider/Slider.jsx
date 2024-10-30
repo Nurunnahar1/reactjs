@@ -6,66 +6,60 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 // import required modules
-import { Parallax, Pagination, Navigation } from "swiper/modules";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
-export default function Slider() {
+const Slider = () => {
   return (
     <>
       <Swiper
-        speed={600}
-        parallax={true}
+        spaceBetween={30}
+        effect={"fade"}
+        navigation={true}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Parallax, Pagination, Navigation]}
+        modules={[EffectFade, Navigation, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="title-area">
-            <div className="content">
-              <h4> We work hard and porto has</h4>
-
-              <h2>The Best Design</h2>
-              <p>
-                Trusted by over 40,000 satisfied users, Porto is a huge success
-                in the one of largest world's MarketPlace
-              </p>
-            </div>
+        <SwiperSlide className="single-slider-one">
+          <div className="content">
+            <h2>We work hard and porto has</h2>
+            <h1>The Best Design</h1>
+            <p>
+              
+              Trusted by over 40,000 satisfied users, Porto is a huge success in
+              the one of largest world's MarketPlace 
+            </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="title-area">
-            <div className="content">
-              <h4> We work hard and porto has</h4>
-
-              <h2>The Best Design</h2>
-              <p>
-                Trusted by over 40,000 satisfied users, Porto is a huge success
-                in the one of largest world's MarketPlace
-              </p>
-            </div>
+        <SwiperSlide className="single-slider-two">
+          <div className="content">
+            <h2>We work hard and porto has</h2>
+            <h1>The Best Design</h1>
+            <p>
+              Trusted by over 40,000 satisfied users, Porto is a huge success in
+              the one of largest world's MarketPlace
+            </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="title-area">
-            <div className="content">
-              <h4> We work hard and porto has</h4>
-
-              <h2>The Best Design</h2>
-              <p>
-                Trusted by over 40,000 satisfied users, Porto is a huge success
-                in the one of largest world's MarketPlace
-              </p>
-            </div>
+        <SwiperSlide className="single-slider-three">
+          <div className="content">
+            <h2>We work hard and porto has</h2>
+            <h1>The Best Design</h1>
+            <p>
+              Trusted by over 40,000 satisfied users, Porto is a huge success in
+              the one of largest world's MarketPlace
+            </p>
           </div>
         </SwiperSlide>
-       
       </Swiper>
     </>
   );
-}
+};
+
+export default Slider;
