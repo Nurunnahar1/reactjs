@@ -1,8 +1,108 @@
 {
-    "students":[
-        {
-            "id":"1",
-            "name":"Nasrin"
-        }
-    ]
+  "students": [
+    {
+      "name": "aaaaa",
+      "roll": "Aliquam suscipit cup",
+      "email": "sanifimip@mailinator.com",
+      "phone": "+1 (876) 271-1668",
+      "location": "Sint et soluta iste ",
+      "id": "a1db"
+    },
+    {
+      "name": "ccccccc",
+      "roll": "Et et dolor commodo ",
+      "email": "nasu@mailinator.com",
+      "phone": "+1 (842) 691-4424",
+      "location": "Enim et quia sunt au",
+      "id": "4f7b"
+    },
+    {
+      "id": "27cb",
+      "name": "Robert Sawyer",
+      "roll": "Do similique accusan",
+      "email": "favacyv@mailinator.com",
+      "phone": "+1 (791) 894-1827",
+      "location": "Eu laborum ipsa lab"
+    },
+    {
+      "id": "6e8f",
+      "name": "Jorden Mccullough",
+      "roll": "Molestias amet mole",
+      "email": "wutywahery@mailinator.com",
+      "phone": "+1 (117) 857-9445",
+      "location": "Esse mollitia non au"
+    },
+    {
+      "id": "24d6",
+      "name": "Rafael Briggs",
+      "roll": "Beatae dignissimos m",
+      "email": "weqopikipy@mailinator.com",
+      "phone": "+1 (682) 364-4764",
+      "location": "Culpa consequatur U"
+    },
+    {
+      "id": "ad72",
+      "name": "Akeem Clayton",
+      "roll": "Eiusmod cum sapiente",
+      "email": "makebipa@mailinator.com",
+      "phone": "+1 (766) 785-6804",
+      "location": "Minus sed distinctio"
+    },
+    {
+      "id": "24fc",
+      "name": "Xyla Galloway",
+      "roll": "Illo omnis et et nis",
+      "email": "qoda@mailinator.com",
+      "phone": "+1 (635) 662-8825",
+      "location": "At voluptate ipsa a"
+    },
+    {
+      "id": "6109",
+      "name": "Shannon Ellis",
+      "roll": "Reprehenderit eius s",
+      "email": "bazybyb@mailinator.com",
+      "phone": "+1 (883) 217-5123",
+      "location": "Consequat Et ex vol"
+    },
+    {
+      "id": "c8ab",
+      "name": "Signe Small",
+      "roll": "Ut velit sit volupt",
+      "email": "temaj@mailinator.com",
+      "phone": "+1 (679) 131-7422",
+      "location": "Consequatur volupta"
+    },
+    {
+      "id": "6109",
+      "name": "Shannon Ellis",
+      "roll": "Reprehenderit eius s",
+      "email": "bazybyb@mailinator.com",
+      "phone": "+1 (883) 217-5123",
+      "location": "Consequat Et ex vol"
+    },
+    {
+      "id": "6109",
+      "name": "Shannon Ellis",
+      "roll": "Reprehenderit eius s",
+      "email": "bazybyb@mailinator.com",
+      "phone": "+1 (883) 217-5123",
+      "location": "Consequat Et exxzcxzczcz"
+    },
+    {
+      "id": "6109",
+      "name": "Shannon Ellis",
+      "roll": "Reprehenderit eius s",
+      "email": "bazybyb@mailinator.com",
+      "phone": "+1 (883) 217-5123",
+      "location": "aaaaaaaaaaaa"
+    },
+    {
+      "id": "27cb",
+      "name": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "roll": "Do similique accusan",
+      "email": "favacyv@mailinator.com",
+      "phone": "+1 (791) 894-1827",
+      "location": "Eu laborum ipsa lab"
+    }
+  ]
 }
