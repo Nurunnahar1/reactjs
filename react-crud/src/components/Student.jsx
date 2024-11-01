@@ -69,7 +69,13 @@ const Students = () => {
       phone: "",
       location: "",
     });
-      setUpdateForm(false);
+    setUpdateForm(false);
+  };
+
+  //delete student data
+  const handleStudentDelete = async (id) => {
+    await axios.delete(`http://localhost:5050/students/${id}`);
+    getAllStudents();
   };
 
   useEffect(() => {
@@ -200,7 +206,9 @@ const Students = () => {
                       >
                         Edit
                       </button>
-                      <button>Delete</button>
+                      <button onClick={()=>handleStudentDelete(item.id)}>
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 );
