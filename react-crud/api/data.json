@@ -1,3 +1,12 @@
 {
-  "students": []
+  "students": [
+    {
+      "id": "c5f0",
+      "name": "Janna Bernard",
+      "roll": "Qui veniam nulla do",
+      "email": "xivazoh@mailinator.com",
+      "phone": "+1 (753) 726-8405",
+      "location": "Irure voluptas sit "
+    }
+  ]
 }
