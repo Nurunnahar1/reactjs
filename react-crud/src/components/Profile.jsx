@@ -1,8 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-const Profile = () => {
-  const [file, setFile] = useState(null);
+const Profile = () => { 
   const [preview, setPreview] = useState(null);
 
   const handleFileUpload = async(e) => {
@@ -26,5 +25,6 @@ const Profile = () => {
     </>
   );
 };
+
 
 export default Profile;

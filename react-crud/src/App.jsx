@@ -1,13 +1,13 @@
  
-import './App.css'
-import Profile from './components/Profile' 
+import './App.css' 
+import Students from './components/Student'
  
 
 function App() { 
 
   return (
     <>
-   <Profile/>
+   <Students/>
     </>
   )
 }

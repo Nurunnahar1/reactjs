@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { cloudUpload } from "../utils/Cloudinary";
 
 const Students = () => {
   //create student method
   const [input, setInput] = useState({
+    photo: "",
     name: "",
     roll: "",
     email: "",
@@ -17,10 +19,23 @@ const Students = () => {
     }));
   };
 
+  //image upload
+  const [file, setFile] = useState(null);
+
   const handelStudentFormSubmit = async (event) => {
     event.preventDefault();
     // console.log(input);
-    const response = await axios.post("http://localhost:5050/students", input);
+    const fileData = await cloudUpload({
+      file: file,
+      preset: "upload_image",
+      cloudName: "dndizynno",
+    });
+    // console.log(fileData);
+
+    await axios.post("http://localhost:5050/students", {
+      ...input,
+      photo: fileData.secure_url,
+    });
     setInput({
       name: "",
       roll: "",
@@ -51,16 +66,13 @@ const Students = () => {
   //submit update student data
   const handelStudentUpdateFormSubmit = async (event) => {
     event.preventDefault();
-    const response = await axios.put(
-      `http://localhost:5050/students/${input.id}`,
-      {
-        name: input.name,
-        roll: input.roll,
-        email: input.email,
-        phone: input.phone,
-        location: input.location,
-      }
-    );
+    await axios.put(`http://localhost:5050/students/${input.id}`, {
+      name: input.name,
+      roll: input.roll,
+      email: input.email,
+      phone: input.phone,
+      location: input.location,
+    });
     getAllStudents();
     setInput({
       name: "",
@@ -90,6 +102,11 @@ const Students = () => {
             <div className="create-new-data">
               <h2>Create New Student Data</h2>
               <form onSubmit={handelStudentFormSubmit}>
+                <input
+                  type="file"
+                  onChange={(e) => setFile(e.target.files[0])} 
+                 
+                />
                 <input
                   type="text"
                   placeholder="Name"
@@ -179,41 +196,53 @@ const Students = () => {
         </div>
         <div className="student-data">
           <table>
-            <thead>
+            <tr>
               <th>#</th>
+              <th>Photo</th>
               <th>Name</th>
               <th>Roll</th>
               <th>Email</th>
               <th>Phone</th>
               <th>Location</th>
               <th>Action</th>
-            </thead>
-            <tbody>
-              {student.map((item, index) => {
-                return (
-                  <tr key={item.id}>
-                    <td>{index + 1}</td>
-                    <td>{item.name}</td>
-                    <td>{item.roll}</td>
-                    <td>{item.email}</td>
-                    <td>{item.phone}</td>
-                    <td>{item.location}</td>
-                    <td>
-                      <button
-                        onClick={() => {
-                          handleStudentEdit(item.id);
-                        }}
-                      >
-                        Edit
-                      </button>
-                      <button onClick={()=>handleStudentDelete(item.id)}>
-                        Delete
-                      </button>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
+            </tr>
+
+            {student.map((item, index) => {
+              return (
+                <tr key={item.id}>
+                  <td>{index + 1}</td>
+                  <td>
+                    <img
+                      style={{
+                        width: "70px",
+                        height: "70px",
+                        borderRadius: "50px ",
+                        objectFit: "cover",
+                      }}
+                      src={item.photo}
+                      alt=""
+                    />
+                  </td>
+                  <td>{item.name}</td>
+                  <td>{item.roll}</td>
+                  <td>{item.email}</td>
+                  <td>{item.phone}</td>
+                  <td>{item.location}</td>
+                  <td>
+                    <button
+                      onClick={() => {
+                        handleStudentEdit(item.id);
+                      }}
+                    >
+                      Edit
+                    </button>
+                    <button onClick={() => handleStudentDelete(item.id)}>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
           </table>
         </div>
       </div>
