@@ -1,13 +1,5 @@
 {
   "students": [
-    {
-      "id": "5247",
-      "photo": "https://res.cloudinary.com/dndizynno/image/upload/v1730740339/amac0zwweli19mstftgd.jpg",
-      "name": "Ivan Wilkinson",
-      "roll": "Delectus quo volupt",
-      "email": "doliwi@mailinator.com",
-      "phone": "+1 (411) 844-2411",
-      "location": "Voluptas maiores con"
-    }
+ 
   ]
 }
