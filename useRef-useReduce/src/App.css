@@ -1,0 +1,11 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ .counter{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 1200px;
+ }
