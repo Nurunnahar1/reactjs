@@ -1,22 +1,14 @@
-import { useEffect, useRef } from "react";
+ 
 import "./App.css";
+import Countar from "./components/Countar";
 
 function App() {
-  const hello = useRef(null);
-
-  useEffect(() => {
-    if (hello.current) {
-      hello.current.style.color = "green";
-    }
-  }, []);
-
   return (
     <>
-      <div className="counter">
-        <h1 ref={hello}>Hello Everyone.......</h1>
-      </div>
+   <Countar/>
+    
     </>
-  );
+ )
 }
 
 export default App;
