@@ -9,6 +9,8 @@ const countReducer = (state, action) => {
 
     case "COUNTSET":
       return 0;
+    case "COUNTFIXED":
+      return action.payload;
   }
 }
  
@@ -24,6 +26,7 @@ const Countar = () => {
         <button onClick={()=>dispatch({type:"COUNTDESC"})}>--</button>
         <button onClick={()=>dispatch({type:"COUNTINC"})} >++</button> 
         <button onClick={()=>dispatch({type:"COUNTSET"})} >Set</button> 
+        <button onClick={()=>dispatch({type:"COUNTFIXED",payload:100})} >Fixed</button> 
       </div>
     </>
   );
